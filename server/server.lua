@@ -25,4 +25,10 @@ end)
 -------------------------------   End    --------------------------------
 -------------------------------------------------------------------------
 
+--This handles the version check
+local versioner = exports['bcc-versioner'].initiate()
+local repo = 'https://github.com/Emotion06/emotion_balloon'
+versioner.checkRelease(GetCurrentResourceName(), repo)
+
+
 print("^6𝙀𝙈𝙊𝙏𝙄𝙊𝙉_𝘽𝘼𝙇𝙇𝙊𝙊𝙉 ^5is Started! ^6🌌 𝙀𝙢𝙤𝙩𝙞𝙤𝙣 𝙎𝙘𝙧𝙞𝙥𝙩𝙨 ^0- ^5https://discord.gg/h4nhwVQCAQ ^0")
