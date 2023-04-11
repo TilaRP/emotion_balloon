@@ -10,6 +10,7 @@
 
 ## REQUIREMENTS
 - VORP Core
+- BCC Versioner (https://github.com/BryceCanyonCounty/bcc-versioner)
 
 ## HOW TO USE THE SCRIPT
 - Add the file to your resource file
