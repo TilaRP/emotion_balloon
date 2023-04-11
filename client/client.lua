@@ -67,7 +67,7 @@ end
 function Button_Prompt()
 
     Citizen.CreateThread(function()
-        local str = ""..Config.Language[1].text..""
+        local str = _U("PromptMessage")
         RentABalloon = Citizen.InvokeNative(0x04F97DE45A519419)
         PromptSetControlAction(RentABalloon, 0xD9D0E1C0)
         str = CreateVarString(10, 'LITERAL_STRING', str)
@@ -87,7 +87,7 @@ Citizen.CreateThread(function()
 		local coords = GetEntityCoords(PlayerPedId())
         for i, v in pairs(Config.RentABalloon) do
             if (Vdist(coords.x, coords.y, coords.z, v.pos.x, v.pos.y, v.pos.z) < 2.0) then
-            local rent = CreateVarString(10, 'LITERAL_STRING', ""..Config.Language[2].text.."")
+            local rent = CreateVarString(10, 'LITERAL_STRING', _U("PromptTitle"))
             PromptSetActiveGroupThisFrame(buttons_prompt, rent) 
                 if Citizen.InvokeNative(0x50F940259D3841E6, 0, 0xD9D0E1C0) then
                         TriggerEvent("emotion_balloon:spwan")

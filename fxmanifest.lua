@@ -4,8 +4,8 @@ game "rdr3"
 lua54 'yes'
 
 author 'Emotion'
-description 'by Emotion'
-version '1.0.0'
+description 'Balloon'
+version '2.0.1'
 
 server_scripts {
   'server/server.lua'
@@ -16,5 +16,12 @@ client_scripts {
 }
 
 shared_scripts {
-    'config.lua',
+	'config.lua',
+	'shared/locale.lua',
+  'languages/*.lua',
+}
+
+dependencies { 
+  'vorp_core',
+  'bcc-versioner',
 }

@@ -4,9 +4,11 @@
 
 Config = {}
 
+Config.Defaultlang = "de"
+
 Config.RentABalloon = {
     {
-        name = "Rent a Balloon",
+        name = "Balloon Vermietung",
         blip = true,
         sprite = 1078668923,
         npcmodel = "loansharking_horsechase1_males_01",
@@ -26,15 +28,6 @@ Config.Keys = {
     ["A"] = {key = 0x7065027D},
     ["S"] = {key = 0xD27782E3},
     ["D"] = {key = 0xB4E465B4},
-}
-
-Config.Language = {
-
-    [1] = {text = "Buy",},
-    [2] = {text = "Rent a Ballon",},
-    -- Notification
-    [3] = {text = "Baloon",}, -- Title
-    [4] = {text = "Your rent a Baloon",}, -- Text
 }
 
 -------------------------------------------------------------------------
