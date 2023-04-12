@@ -16,7 +16,7 @@ AddEventHandler('emotion_balloon:takemoney', function ()
     for i, v in pairs(Config.RentABalloon) do
         if Config.PayPrice then
             Character.removeCurrency(0, v.price)
-            VorpCore.NotifyLeft(_source, _U("NotifyTitle"), _U("NotifyMessage", "generic_textures", "tick", 4000, "COLOR_PURE_WHITE")
+            VorpCore.NotifyLeft(_source, _U("NotifyTitle"), _U("NotifyMessage", "generic_textures", "tick", 4000, "COLOR_PURE_WHITE"))
         end
     end
 end)
